@@ -1,0 +1,83 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.container{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.float-container div, .flex-container div{
+    position: relative;
+}
+.container span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.float-container, .flex-container{
+    width: 50%;
+}
+
+.header{
+    background-color: cornflowerblue;
+}
+
+.content-text{
+    background-color: chartreuse;
+}
+
+.content-img{
+    background-color: forestgreen;
+}
+
+.footer{
+    background-color: aquamarine;
+}
+
+.header, .footer {
+    height: 5rem;
+}
+
+.float-container .content-text, .float-container .content-img,
+.flex-container .content{
+    height: 15rem;
+}
+
+.float-container .content-text{
+    float: left;
+    width: 80%;
+}
+
+.float-container .content-img{
+    float: right;
+    width: 20%;
+}
+
+.float-container .footer{
+    clear: both;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container .content{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container .content-text{
+    flex-basis: 80%;
+}
+
+.flex-container .content-img{
+    flex-basis: 20%;
+}
